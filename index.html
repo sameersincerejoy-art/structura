@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Structura Engineering — Engineering analysis for difficult mechanical problems</title>
+<link rel="canonical" href="https://structura.in/">
+<meta name="description" content="Structura Engineering helps engineering teams understand what is physically controlling a mechanical problem, what evidence is needed, and what should change as a result. Failure investigation, advanced structural analysis, verification &amp; validation and analysis-led design improvement.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Skip link -->
+<a class="skip-link" href="#main" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:1000">Skip to main content</a>
+
+<header class="header">
+  <div class="header__inner">
+    <a class="wordmark" href="index.html" aria-label="Structura Engineering — home">
+      <svg class="wordmark__mark" width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">
+        <line x1="4.5" y1="3" x2="4.5" y2="23" stroke="#17191C" stroke-width="1.4"/>
+        <line x1="4.5" y1="3" x2="22" y2="13" stroke="#17191C" stroke-width="1.4"/>
+        <line x1="4.5" y1="23" x2="22" y2="13" stroke="#285B78" stroke-width="1.4"/>
+        <circle cx="13.2" cy="8" r="1.8" fill="#17191C"/>
+      </svg>
+      <span class="wordmark__text">Structura<small>Engineering</small></span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="industries.html">Industries</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="insights.html">Insights</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn--primary nav__cta" href="contact.html#intake-form">Discuss an Engineering Problem</a>
+    </nav>
+
+    <div class="header__cta">
+      <a class="btn btn--primary" href="contact.html#intake-form">Discuss an Engineering Problem</a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="18" height="14" viewBox="0 0 18 14" aria-hidden="true">
+        <line x1="0" y1="1" x2="18" y2="1" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="0" y1="7" x2="18" y2="7" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="0" y1="13" x2="18" y2="13" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<!-- ============================================================ HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__grid">
+      <div>
+        <span class="eyebrow">Structura Engineering · India</span>
+        <h1 class="display-hero">Engineering analysis for difficult mechanical problems</h1>
+        <p class="lede">When a product fails, a simulation is inconclusive, or a design needs stronger evidence before release, the engineering problem is rarely just &ldquo;run an FEA.&rdquo;</p>
+        <p class="body mt3">We help engineering teams understand <strong>what is physically controlling the problem, what evidence is needed, and what should change as a result.</strong></p>
+        <p class="mono mt3">Failure investigation · Advanced structural analysis · Verification &amp; validation · Design improvement</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="contact.html#intake-form">Discuss an Engineering Problem</a>
+          <a class="btn btn--secondary" href="capabilities.html">Explore Our Capabilities</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="figure">
+          <svg class="tech" viewBox="0 0 470 560" role="img" aria-label="Technical figure: from physical system through engineering question, model and evidence to an engineering decision">
+            <!-- rail -->
+            <line class="st-thin" x1="34" y1="34" x2="34" y2="514"/>
+
+            <!-- 01 physical system -->
+            <rect class="st-line" x="30" y="30" width="8" height="8"/>
+            <text class="t-dark" x="64" y="38">01 · Physical system</text>
+            <path class="st-line" d="M70 62 h96 v44 h-40 v34 h-24 v-34 h-32 z"/>
+            <circle class="st-line" cx="92" cy="84" r="9"/>
+            <line class="st-thin" x1="70" y1="130" x2="166" y2="130"/>
+            <line class="st-thin" x1="70" y1="126" x2="70" y2="134"/>
+            <line class="st-thin" x1="166" y1="126" x2="166" y2="134"/>
+            <text x="118" y="146">Component in service</text>
+            <path class="st-amber" d="M196 66 v-14 m0 14 h18 m-18 0 v-14"/>
+            <path class="st-amber" d="M204 48 l-5 6 m5 -6 l5 6"/>
+            <text class="t-amber" x="222" y="60">Load</text>
+            <path class="st-amber" d="M196 100 v16 m0 -16 h18 m-18 0 v16"/>
+            <path class="st-amber" d="M204 120 l-5 -6 m5 6 l5 -6"/>
+            <text class="t-amber" x="222" y="112">Load</text>
+
+            <!-- 02 engineering question -->
+            <rect class="st-blue" x="30" y="170" width="8" height="8"/>
+            <text class="t-blue" x="64" y="178">02 · Engineering question</text>
+            <path class="st-thin" d="M70 206 h12 M70 206 v40 M70 246 h12 M226 206 h-12 M226 206 v40 M226 246 h-12"/>
+            <text class="t-dark" x="86" y="224">Which load or detail</text>
+            <text class="t-dark" x="86" y="240">actually governs?</text>
+            <text x="70" y="266">Not: which solver</text>
+
+            <!-- 03 model -->
+            <rect class="st-line" x="30" y="300" width="8" height="8"/>
+            <text class="t-dark" x="64" y="308">03 · Model</text>
+            <line class="st-line" x1="70" y1="346" x2="240" y2="346"/>
+            <line class="st-thin" x1="70" y1="340" x2="70" y2="352"/>
+            <line class="st-thin" x1="240" y1="340" x2="240" y2="352"/>
+            <path class="st-thin" d="M74 352 l6 10 h-12 z"/>
+            <path class="st-thin" d="M236 352 l6 10 h-12 z"/>
+            <line class="st-blue" x1="120" y1="322" x2="120" y2="342"/>
+            <path class="st-blue" d="M115 338 l5 6 l5 -6"/>
+            <line class="st-blue" x1="176" y1="322" x2="176" y2="342"/>
+            <path class="st-blue" d="M171 338 l5 6 l5 -6"/>
+            <text class="t-blue" x="112" y="316">F1</text>
+            <text class="t-blue" x="168" y="316">F2</text>
+            <line class="st-thin" x1="100" y1="346" x2="100" y2="340"/>
+            <line class="st-thin" x1="140" y1="346" x2="140" y2="340"/>
+            <line class="st-thin" x1="180" y1="346" x2="180" y2="340"/>
+            <line class="st-thin" x1="220" y1="346" x2="220" y2="340"/>
+            <text x="70" y="378">Load path · contact · constraint</text>
+
+            <!-- 04 evidence -->
+            <rect class="st-line" x="30" y="404" width="8" height="8"/>
+            <text class="t-dark" x="64" y="412">04 · Evidence</text>
+            <line class="st-thin" x1="70" y1="492" x2="248" y2="492"/>
+            <line class="st-thin" x1="70" y1="492" x2="70" y2="428"/>
+            <path class="st-blue" d="M70 484 C110 480 140 466 164 444 S210 430 244 434"/>
+            <circle class="fill-amber" cx="164" cy="444" r="4"/>
+            <circle class="st-amber" cx="164" cy="444" r="4"/>
+            <line class="st-thin" x1="164" y1="444" x2="164" y2="492" stroke-dasharray="3 3"/>
+            <text class="t-amber" x="172" y="460">Measured point</text>
+            <text x="70" y="510">Response vs. measurement</text>
+
+            <!-- 05 decision -->
+            <rect class="st-blue" x="290" y="30" width="8" height="8" style="fill:#285B78"/>
+            <text class="t-blue" x="324" y="38">05 · Decision</text>
+            <line class="st-thin" x1="308" y1="128" x2="446" y2="128"/>
+            <line class="st-thin" x1="308" y1="128" x2="308" y2="52"/>
+            <path class="st-line" d="M308 118 C344 114 372 100 394 84 S430 68 444 70"/>
+            <line class="st-amber" x1="308" y1="86" x2="446" y2="86" stroke-dasharray="4 3"/>
+            <text class="t-amber" x="312" y="80">Limit</text>
+            <circle class="st-blue" cx="394" cy="84" r="5" style="fill:#F5F4F0"/>
+            <path class="st-blue" d="M394 66 v-12"/>
+            <text class="t-blue" x="368" y="48">Accept / change</text>
+            <text x="308" y="150">Design · limit · inspection</text>
+
+            <line class="st-thin" x1="290" y1="190" x2="446" y2="190"/>
+            <text x="290" y="212">The figure moves left to right:</text>
+            <text x="290" y="230">evidence is produced, then a</text>
+            <text x="290" y="248">decision is taken. The model</text>
+            <text x="290" y="266">exists to serve the decision.</text>
+
+            <line class="st-thin" x1="290" y1="300" x2="446" y2="300"/>
+            <text class="t-dark" x="290" y="324">Chain of reasoning</text>
+            <text x="290" y="344">System → question → model</text>
+            <text x="290" y="362">→ evidence → decision</text>
+
+            <path class="st-thin" d="M264 34 v14 m0 -14 l-5 6 m5 -6 l5 6" />
+            <path class="st-thin" d="M264 174 v14 m0 -14 l-5 6 m5 -6 l5 6" />
+            <path class="st-thin" d="M264 304 v14 m0 -14 l-5 6 m5 -6 l5 6" />
+          </svg>
+          <p class="fig-label">Fig. 01 — From engineering question to decision</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== 02 · PROBLEM IDENTIFICATION -->
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">Section 02 — Where we are useful</span>
+    <h2 class="h-section measure">When routine engineering is not enough</h2>
+    <p class="lede mt3">Some problems look simple until the real behaviour is examined.</p>
+    <div class="body mt3">
+      <p>A component may pass a static stress check and still crack in service.<br>
+      A machine may be strong enough but unable to operate through its required speed range.<br>
+      A simulation may converge but still represent the wrong load path.<br>
+      A design may work in principle but lack enough evidence for confident release.</p>
+      <p>These are the problems where deeper engineering judgement matters.</p>
+    </div>
+
+    <div class="mt6">
+      <div class="prow">
+        <div>
+          <span class="idx">A · A product is failing</span>
+          <p class="caption mt2">Cracks, deformation, leakage, unexpected movement, vibration or premature damage.</p>
+        </div>
+        <div>
+          <h3 class="h-subsection">Failure Investigation &amp; Root Cause</h3>
+          <p class="body mt2">We investigate the physical mechanism behind the failure and identify what needs to change.</p>
+          <p class="mt3"><a class="arrow-link" href="contact.html">Investigate a Failure <span aria-hidden="true">→</span></a></p>
+        </div>
+      </div>
+
+      <div class="prow">
+        <div>
+          <span class="idx">B · A design needs proof</span>
+          <p class="caption mt2">The model looks reasonable, but the engineering decision still carries uncertainty.</p>
+        </div>
+        <div>
+          <h3 class="h-subsection">Verification &amp; Validation</h3>
+          <p class="body mt2">We assess assumptions, model behaviour, sensitivity and available test evidence to establish how much confidence the analysis deserves.</p>
+          <p class="mt3"><a class="arrow-link" href="contact.html">Validate a Design <span aria-hidden="true">→</span></a></p>
+        </div>
+      </div>
+
+      <div class="prow">
+        <div>
+          <span class="idx">C · A product needs improvement</span>
+          <p class="caption mt2">The design needs more strength, longer life, lower mass, better performance or greater operating margin.</p>
+        </div>
+        <div>
+          <h3 class="h-subsection">Analysis-led Design Improvement</h3>
+          <p class="body mt2">We use engineering analysis to identify where the design can change — without adding complexity or material where it is not needed.</p>
+          <p class="mt3"><a class="arrow-link" href="contact.html">Improve a Product <span aria-hidden="true">→</span></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================== 03 · SIGNATURE STATEMENT -->
+<section class="section section--dark">
+  <div class="wrap">
+    <span class="eyebrow">Section 03 — Method</span>
+    <p class="statement" style="max-width:900px;color:#9AA1A7">We do not begin by choosing a solver.</p>
+    <p class="eyebrow mt5" style="margin-bottom:12px">We begin by asking:</p>
+    <h2 class="display-hero" style="max-width:1000px">What is the engineering question?</h2>
+    <p class="body mt5" style="color:#9AA1A7;max-width:640px">Then we determine what level of analysis and evidence is actually justified.</p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="capabilities.html">Explore Engineering Capabilities</a>
+      <a class="btn btn--secondary" href="contact.html#intake-form">Discuss a Problem</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== 04 · WHAT WE SOLVE -->
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">Section 04 — Problem areas</span>
+    <h2 class="h-section">What we actually help solve</h2>
+    <p class="lede mt3">Our work is organised around <strong>engineering problems</strong>, not software packages.</p>
+
+    <div class="solve-grid mt6">
+      <article class="solve-cell">
+        <span class="idx">01</span>
+        <h3>Structural failure &amp; root cause</h3>
+        <p class="caption">Recurring cracks, unexpected deformation, overloaded components, failed joints and unclear load paths.</p>
+        <svg class="tech" viewBox="0 0 240 96" role="img" aria-label="Load path diagram with a crack initiating at a re-entrant corner">
+          <path class="st-line" d="M20 70 h70 v-40 h50 v40 h80"/>
+          <path class="st-thin" d="M90 30 l14 14 m0 -14 l-14 14" stroke-dasharray="0"/>
+          <path class="st-amber" d="M96 34 l8 -8 l6 10 l-7 6 z"/>
+          <text class="t-amber" x="106" y="28">Crack</text>
+          <path class="st-blue" d="M30 70 h50 m-50 0 l6 -4 m-6 4 l6 4"/>
+          <text class="t-blue" x="26" y="88">Load path</text>
+          <circle class="st-blue" cx="140" cy="30" r="3"/>
+          <line class="st-thin" x1="140" y1="30" x2="140" y2="14"/>
+          <text x="146" y="16">Detail</text>
+        </svg>
+        <a class="arrow-link" href="capabilities.html#failure">Failure &amp; root cause <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="solve-cell">
+        <span class="idx">02</span>
+        <h3>Fatigue &amp; damage tolerance</h3>
+        <p class="caption">Welded structures, cyclic loading, crack growth, defects and questions about remaining serviceability.</p>
+        <svg class="tech" viewBox="0 0 240 96" role="img" aria-label="Stress cycle spectrum showing repeated loading blocks">
+          <line class="st-thin" x1="20" y1="80" x2="220" y2="80"/>
+          <line class="st-thin" x1="20" y1="80" x2="20" y2="14"/>
+          <path class="st-blue" d="M20 74 h14 v-30 h14 v30 h14 v-52 h14 v52 h14 v-22 h14 v22 h14 v-44 h14 v44 h14 v-30 h14 v30 h14"/>
+          <line class="st-amber" x1="20" y1="24" x2="220" y2="24" stroke-dasharray="4 3"/>
+          <text class="t-amber" x="150" y="20">Δσ limit</text>
+          <text x="20" y="94">Cycles →</text>
+        </svg>
+        <a class="arrow-link" href="capabilities.html#fatigue">Fatigue &amp; damage tolerance <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="solve-cell">
+        <span class="idx">03</span>
+        <h3>Buckling &amp; stability</h3>
+        <p class="caption">Thin structures, shells, booms, pressure vessels and components where instability may govern before conventional strength limits.</p>
+        <svg class="tech" viewBox="0 0 240 96" role="img" aria-label="Column showing an exaggerated buckled mode shape">
+          <line class="st-thin" x1="40" y1="86" x2="200" y2="86"/>
+          <line class="st-line" x1="70" y1="86" x2="70" y2="16"/>
+          <path class="st-blue" d="M170 86 C170 60 130 52 130 30 S150 14 150 16"/>
+          <text class="t-blue" x="176" y="46">Mode 1</text>
+          <path class="st-amber" d="M62 16 h16"/>
+          <text class="t-amber" x="62" y="10">P cr</text>
+          <text x="150" y="94">Amplitude →</text>
+        </svg>
+        <a class="arrow-link" href="capabilities.html#dynamics">Buckling &amp; stability <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="solve-cell">
+        <span class="idx">04</span>
+        <h3>Vibration &amp; dynamics</h3>
+        <p class="caption">Resonance, excessive operating vibration, rotating machinery, structural dynamics and restricted operating speed ranges.</p>
+        <svg class="tech" viewBox="0 0 240 96" role="img" aria-label="Frequency response curve with a resonance peak">
+          <line class="st-thin" x1="20" y1="80" x2="220" y2="80"/>
+          <line class="st-thin" x1="20" y1="80" x2="20" y2="14"/>
+          <path class="st-blue" d="M20 76 C60 74 84 70 100 60 S118 18 126 20 S140 52 156 62 S200 70 220 71"/>
+          <line class="st-amber" x1="126" y1="20" x2="126" y2="80" stroke-dasharray="3 3"/>
+          <text class="t-amber" x="132" y="30">Resonance</text>
+          <text x="20" y="94">Frequency →</text>
+        </svg>
+        <a class="arrow-link" href="capabilities.html#dynamics">Vibration &amp; dynamics <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="solve-cell">
+        <span class="idx">05</span>
+        <h3>Impact &amp; transient loading</h3>
+        <p class="caption">Drop events, crash structures, containment, high-rate loading and problems where inertia and contact change the response.</p>
+        <svg class="tech" viewBox="0 0 240 96" role="img" aria-label="Force-time pulse curve for an impact event">
+          <line class="st-thin" x1="20" y1="80" x2="220" y2="80"/>
+          <line class="st-thin" x1="20" y1="80" x2="20" y2="14"/>
+          <path class="st-blue" d="M20 80 L54 80 C64 80 66 22 78 22 S96 74 110 78 S150 80 220 80"/>
+          <path class="fill-blue" d="M54 80 C64 80 66 22 78 22 S96 74 110 78 L110 80 Z"/>
+          <line class="st-thin" x1="78" y1="22" x2="118" y2="14" stroke-dasharray="3 3"/>
+          <text class="t-blue" x="122" y="14">F peak</text>
+          <text x="20" y="94">Time →</text>
+        </svg>
+        <a class="arrow-link" href="capabilities.html#advanced">Impact &amp; transient <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="solve-cell">
+        <span class="idx">06</span>
+        <h3>Complex structural behaviour</h3>
+        <p class="caption">Contact, preload, material nonlinearity, large deformation, thermal effects and other situations where simple linear assumptions may not be enough.</p>
+        <svg class="tech" viewBox="0 0 240 96" role="img" aria-label="Two contacting blocks with a deformed interface">
+          <path class="st-line" d="M30 26 h84 v34 h-84 z"/>
+          <path class="st-blue" d="M114 26 C134 34 134 52 114 60"/>
+          <path class="st-line" d="M114 26 h74 v34 h-74"/>
+          <circle class="fill-amber" cx="114" cy="43" r="4"/>
+          <circle class="st-amber" cx="114" cy="43" r="4"/>
+          <text class="t-amber" x="124" y="46">Contact</text>
+          <line class="st-thin" x1="30" y1="72" x2="188" y2="72"/>
+          <text x="30" y="88">Preload · large deformation</text>
+        </svg>
+        <a class="arrow-link" href="capabilities.html#advanced">Complex behaviour <span aria-hidden="true">→</span></a>
+      </article>
+    </div>
+
+    <p class="mt5"><a class="arrow-link" href="capabilities.html">Explore Engineering Capabilities <span aria-hidden="true">→</span></a></p>
+  </div>
+</section>
+
+<!-- ======================================= 05 · ENGINEERING BEFORE SIMULATION -->
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">Section 05 — Method</span>
+    <h2 class="h-section">Engineering before simulation</h2>
+    <p class="lede mt3">Good analysis begins before the solver is opened.</p>
+
+    <p class="caption mt5">Hover a stage to read what it involves.</p>
+    <div class="pathway mt2">
+      <div class="stage">
+        <span class="stage__num">01</span>
+        <h3>Understand</h3>
+        <p class="stage__body">Understand the product, operating conditions, requirements and what is going wrong.</p>
+      </div>
+      <div class="stage">
+        <span class="stage__num">02</span>
+        <h3>Define</h3>
+        <p class="stage__body">Turn the problem into measurable questions and a clear analysis objective.</p>
+      </div>
+      <div class="stage">
+        <span class="stage__num">03</span>
+        <h3>Model</h3>
+        <p class="stage__body">Represent the relevant geometry, materials, loads, contacts and constraints.</p>
+      </div>
+      <div class="stage">
+        <span class="stage__num">04</span>
+        <h3>Verify</h3>
+        <p class="stage__body">Check assumptions, numerical behaviour, convergence and sensitivity.</p>
+      </div>
+      <div class="stage">
+        <span class="stage__num">05</span>
+        <h3>Validate</h3>
+        <p class="stage__body">Where appropriate, compare predictions with testing, measurements or other credible reference data.</p>
+      </div>
+      <div class="stage">
+        <span class="stage__num">06</span>
+        <h3>Decide</h3>
+        <p class="stage__body">Turn the technical result into a design change, operating limit, inspection requirement, test plan or engineering conclusion.</p>
+      </div>
+    </div>
+    <p class="fig-label">Fig. 02 — Engineering question → model → evidence → decision</p>
+
+    <blockquote class="pull mt6">The objective is not the most complicated model.<br>It is a model and evidence base that are appropriate for the decision.</blockquote>
+  </div>
+</section>
+
+<!-- ============================================== 06 · ENGINEERING JUDGEMENT -->
+<section class="section" style="background:#EFEDE7;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <span class="eyebrow">Section 06 — Principles</span>
+    <h2 class="h-section">Built around engineering judgement</h2>
+
+    <div class="grid mt6">
+      <div style="grid-column:span 5">
+        <p class="statement">Five principles that decide how the work is done — and how far the analysis should be taken.</p>
+        <p class="body mt4">They are the reason the method is chosen around the physics and the decision, rather than around a particular solver.</p>
+        <p class="mt4"><a class="arrow-link" href="about.html">Meet the team <span aria-hidden="true">→</span></a></p>
+      </div>
+
+      <div style="grid-column:span 7">
+        <div class="spec-list">
+          <div style="padding:20px 0;border-bottom:1px solid var(--line)">
+            <span class="mono">P1</span>
+            <h3 class="h-card mt2">Specialist, not generic</h3>
+            <p class="caption mt2">We focus on difficult structural and mechanical problems where specialist analysis can add value.</p>
+          </div>
+          <div style="padding:20px 0;border-bottom:1px solid var(--line)">
+            <span class="mono">P2</span>
+            <h3 class="h-card mt2">Physics before method</h3>
+            <p class="caption mt2">We use nonlinear, dynamic, fatigue, stability or other advanced methods when the physical problem requires them — not simply because they are available.</p>
+          </div>
+          <div style="padding:20px 0;border-bottom:1px solid var(--line)">
+            <span class="mono">P3</span>
+            <h3 class="h-card mt2">Analysis connected to reality</h3>
+            <p class="caption mt2">Recommendations consider loads, materials, manufacturing, assembly, operating conditions and practical product constraints.</p>
+          </div>
+          <div style="padding:20px 0;border-bottom:1px solid var(--line)">
+            <span class="mono">P4</span>
+            <h3 class="h-card mt2">Verification is part of the engineering</h3>
+            <p class="caption mt2">Model assumptions, boundary conditions, convergence, sensitivity and validation are considered as part of the work rather than added at the end.</p>
+          </div>
+          <div style="padding:20px 0">
+            <span class="mono">P5</span>
+            <h3 class="h-card mt2">Direct technical involvement</h3>
+            <p class="caption mt2">Structura is deliberately specialist. The engineers who understand the problem are directly involved in the analysis and technical discussion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================== 07 · INDUSTRIES -->
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">Section 07 — Sectors</span>
+    <h2 class="h-section">Where we can help</h2>
+    <p class="lede mt3">We work with engineering-intensive companies where mechanical performance, reliability or validation matters.</p>
+
+    <div class="ind-grid mt6">
+      <article class="ind-panel">
+        <div class="ind-panel__fig">
+          <svg class="tech" viewBox="0 0 560 260" role="img" aria-label="Technical drawing of an industrial machine frame with load paths">
+            <rect class="st-line" x="60" y="70" width="300" height="130"/>
+            <line class="st-line" x1="60" y1="110" x2="360" y2="110"/>
+            <line class="st-line" x1="160" y1="70" x2="160" y2="200"/>
+            <line class="st-line" x1="260" y1="70" x2="260" y2="200"/>
+            <circle class="st-blue" cx="330" cy="150" r="22"/>
+            <circle class="st-thin" cx="330" cy="150" r="10"/>
+            <path class="st-blue" d="M110 60 v-18 m0 18 l-5 -6 m5 6 l5 -6"/>
+            <text class="t-blue" x="94" y="36">F</text>
+            <path class="st-amber" d="M360 150 h22 m-22 0 l6 -5 m-6 5 l6 5"/>
+            <text class="t-amber" x="390" y="154">Torque</text>
+            <line class="st-thin" x1="60" y1="216" x2="360" y2="216"/>
+            <text x="60" y="234">Machine frame · load introduction</text>
+            <rect class="st-thin" x="400" y="70" width="100" height="130"/>
+            <line class="st-thin" x1="400" y1="104" x2="500" y2="104"/>
+            <line class="st-thin" x1="400" y1="138" x2="500" y2="138"/>
+            <line class="st-thin" x1="400" y1="172" x2="500" y2="172"/>
+            <text x="400" y="234">Weldment detail</text>
+          </svg>
+        </div>
+        <div class="ind-panel__body">
+          <span class="mono">01</span>
+          <h3 class="h-card">Industrial Equipment &amp; Machinery</h3>
+          <p class="caption">Machine structures, process equipment, material-handling systems, fabricated structures, pressure-containing components and mechanical assemblies.</p>
+          <p class="mono" style="color:var(--blue)">Structural performance · Fatigue · Nonlinear behaviour</p>
+          <p class="mt2"><a class="arrow-link" href="industries.html#industrial">Industrial equipment <span aria-hidden="true">→</span></a></p>
+        </div>
+      </article>
+
+      <article class="ind-panel">
+        <div class="ind-panel__fig">
+          <svg class="tech" viewBox="0 0 560 260" role="img" aria-label="Technical drawing of a vehicle chassis rail with mounts and wheel stations">
+            <path class="st-line" d="M60 130 h360 l40 -30 h60"/>
+            <path class="st-line" d="M60 168 h360 l40 -30 h60"/>
+            <line class="st-line" x1="150" y1="130" x2="150" y2="168"/>
+            <line class="st-line" x1="270" y1="130" x2="270" y2="168"/>
+            <circle class="st-line" cx="150" cy="200" r="30"/>
+            <circle class="st-thin" cx="150" cy="200" r="14"/>
+            <circle class="st-line" cx="430" cy="200" r="30"/>
+            <circle class="st-thin" cx="430" cy="200" r="14"/>
+            <path class="st-amber" d="M210 110 v14 m-5 -6 l5 6 l5 -6"/>
+            <text class="t-amber" x="190" y="104">Mount</text>
+            <line class="st-thin" x1="60" y1="240" x2="520" y2="240"/>
+            <text x="60" y="256">Chassis rail · weld detail · durability</text>
+          </svg>
+        </div>
+        <div class="ind-panel__body">
+          <span class="mono">02</span>
+          <h3 class="h-card">Automotive &amp; Mobility</h3>
+          <p class="caption">Structural components, chassis-related systems, commercial vehicles, off-highway equipment and durability problems.</p>
+          <p class="mt2"><a class="arrow-link" href="industries.html#automotive">Automotive &amp; mobility <span aria-hidden="true">→</span></a></p>
+        </div>
+      </article>
+
+      <article class="ind-panel">
+        <div class="ind-panel__fig">
+          <svg class="tech" viewBox="0 0 560 260" role="img" aria-label="Technical drawing of an aerospace rib and stringer panel section">
+            <path class="st-line" d="M80 60 h300 a60 100 0 0 1 0 140 h-300 z"/>
+            <line class="st-thin" x1="80" y1="130" x2="380" y2="130" stroke-dasharray="4 4"/>
+            <line class="st-line" x1="150" y1="60" x2="150" y2="200"/>
+            <line class="st-line" x1="230" y1="60" x2="230" y2="200"/>
+            <line class="st-line" x1="310" y1="60" x2="310" y2="200"/>
+            <circle class="st-blue" cx="150" cy="130" r="4"/>
+            <circle class="st-blue" cx="230" cy="130" r="4"/>
+            <circle class="st-blue" cx="310" cy="130" r="4"/>
+            <path class="st-amber" d="M380 100 q22 30 0 60" stroke-dasharray="3 3"/>
+            <text class="t-amber" x="392" y="134">Skin</text>
+            <text x="80" y="228">Rib · stringer · fastener pattern</text>
+          </svg>
+        </div>
+        <div class="ind-panel__body">
+          <span class="mono">03</span>
+          <h3 class="h-card">Aerospace &amp; Advanced Structures</h3>
+          <p class="caption">Structural analysis, verification, composites, lightweight structures and technically demanding engineering assessments.</p>
+          <p class="mono" style="color:var(--blue)">Relevant team experience</p>
+          <p class="caption">Aerospace capability is informed by professional experience in aerospace structural engineering. Previous professional experience is clearly separated from work performed by Structura.</p>
+          <p class="mt2"><a class="arrow-link" href="industries.html#aerospace">Aerospace &amp; advanced structures <span aria-hidden="true">→</span></a></p>
+        </div>
+      </article>
+
+      <article class="ind-panel">
+        <div class="ind-panel__fig">
+          <svg class="tech" viewBox="0 0 560 260" role="img" aria-label="Technical drawing of a large mining truck structure with suspension loads">
+            <path class="st-line" d="M60 150 h60 v-60 h260 v60 h80 v40 h-60"/>
+            <path class="st-line" d="M120 90 h260"/>
+            <circle class="st-line" cx="170" cy="205" r="26"/>
+            <circle class="st-thin" cx="170" cy="205" r="12"/>
+            <circle class="st-line" cx="330" cy="205" r="26"/>
+            <circle class="st-thin" cx="330" cy="205" r="12"/>
+            <path class="st-amber" d="M250 150 v22 m-5 -6 l5 6 l5 -6"/>
+            <text class="t-amber" x="224" y="188">Duty load</text>
+            <path class="st-blue" d="M60 150 h-22 m22 0 l-6 -5 m6 5 l-6 5"/>
+            <text class="t-blue" x="16" y="142">Chassis</text>
+            <line class="st-thin" x1="60" y1="240" x2="500" y2="240"/>
+            <text x="60" y="256">Frame · suspension · weld fatigue</text>
+          </svg>
+        </div>
+        <div class="ind-panel__body">
+          <span class="mono">04</span>
+          <h3 class="h-card">Heavy Equipment, Mining &amp; Energy</h3>
+          <p class="caption">Large structures, fatigue, vibration, stability, impact and service-life problems.</p>
+          <p class="mt2"><a class="arrow-link" href="industries.html#heavy">Heavy equipment, mining &amp; energy <span aria-hidden="true">→</span></a></p>
+        </div>
+      </article>
+    </div>
+
+    <blockquote class="pull mt6">The industry may change.<br>The engineering questions often do not.</blockquote>
+  </div>
+</section>
+
+<!-- ============================================ 08 · SELECTED INVESTIGATIONS -->
+<section class="section" id="selected-investigations">
+  <div class="wrap">
+    <span class="eyebrow">Section 08 — Selected investigations</span>
+    <h2 class="h-section">Selected Engineering Investigations</h2>
+    <p class="lede mt3">Selected studies demonstrating how engineering analysis can clarify complex structural, dynamic and fatigue-related problems.</p>
+
+    <div class="home-cs mt6">
+
+      <article class="home-cs__item">
+        <div class="home-cs__meta">
+          <span class="mono">Industrial Machinery / Packaging Automation</span>
+          <span class="badge badge--professional">Synthetic Engineering Study</span>
+        </div>
+        <h3 class="h-card">High-Speed Cam–Follower Redesign</h3>
+        <p class="caption mt2">A spring-return cam–follower mechanism was investigated for an increase from 200 to 260 rpm. A reduced-order model predicted contact loss in the original configuration; redesign screening produced calculated nominal and worst-corner contact-force margins of +36.17 N and +16.26 N within a synthetic uncertainty envelope.</p>
+        <p class="home-cs__links">
+          <a class="arrow-link" href="case-studies.html#cam-follower">Read the summary <span aria-hidden="true">→</span></a>
+          <a class="home-cs__dl" href="downloads/Structura-Engineering-Cam-Follower-Redesign-Study.pdf" download>Download PDF <span class="mono" aria-hidden="true">· 6 pages</span></a>
+        </p>
+      </article>
+
+      <article class="home-cs__item">
+        <div class="home-cs__meta">
+          <span class="mono">Automotive / Powertrain / Engine Accessories</span>
+          <span class="badge badge--professional">Literature-Informed Reconstruction</span>
+        </div>
+        <h3 class="h-card">Beyond Static Strength</h3>
+        <p class="caption mt2">A literature-informed investigation of alternator mounting bracket fatigue, considering engine-induced cyclic stress, local notch severity and surface condition. An integrated redesign produced a calculated equivalent fatigue-demand indicator of 138.7 MPa against an illustrative baseline of 234.7 MPa under declared assumptions.</p>
+        <p class="home-cs__links">
+          <a class="arrow-link" href="case-studies.html#alternator-bracket">Read the summary <span aria-hidden="true">→</span></a>
+          <a class="home-cs__dl" href="downloads/Structura-Engineering-Alternator-Bracket-Fatigue-Study.pdf" download>Download PDF <span class="mono" aria-hidden="true">· 9 pages</span></a>
+        </p>
+      </article>
+
+    </div>
+
+    <p class="caption mt4">Each study is labelled by evidence status. Calculated results are not presented as measured outcomes.</p>
+
+    <div class="btn-row">
+      <a class="btn btn--primary" href="case-studies.html">Explore All Case Studies</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================== 09 · EVIDENCE -->
+<section class="section section--dark">
+  <div class="wrap">
+    <span class="eyebrow">Section 09 — Evidence</span>
+    <h2 class="h-section">Evidence before confidence</h2>
+    <p class="lede mt3" style="color:#9AA1A7">A model can converge perfectly and still represent the wrong physical problem. We make the boundary between assumption and evidence visible.</p>
+
+    <div class="ladder">
+      <div class="rung">
+        <span class="rung__bar" style="opacity:.25"></span>
+        <span class="rung__label">Assumed input</span>
+        <span class="rung__desc">Used to construct a synthetic study or preliminary model.</span>
+      </div>
+      <div class="rung">
+        <span class="rung__bar" style="opacity:.4"></span>
+        <span class="rung__label">Calculated result</span>
+        <span class="rung__desc">An independently reproducible analytical or reduced-order calculation.</span>
+      </div>
+      <div class="rung">
+        <span class="rung__bar" style="opacity:.55"></span>
+        <span class="rung__label">Simulation result</span>
+        <span class="rung__desc">A numerical prediction from a defined model.</span>
+      </div>
+      <div class="rung">
+        <span class="rung__bar" style="opacity:.7"></span>
+        <span class="rung__label">Measured result</span>
+        <span class="rung__desc">Evidence obtained from a physical component, test or operating system.</span>
+      </div>
+      <div class="rung">
+        <span class="rung__bar" style="opacity:.85"></span>
+        <span class="rung__label">Validated result</span>
+        <span class="rung__desc">A prediction that has been compared against appropriate independent evidence.</span>
+      </div>
+      <div class="rung rung--peak">
+        <span class="rung__bar"></span>
+        <span class="rung__label">Released design</span>
+        <span class="rung__desc">A result accepted against the responsible engineering standard, test basis and project requirements.</span>
+      </div>
+    </div>
+
+    <p class="mono mt4" style="color:#9AA1A7">Confidence increases as independent evidence increases.</p>
+    <p class="body mt2" style="color:#9AA1A7;max-width:720px">Not every project reaches the final rung. Stating where a result actually sits is part of the engineering.</p>
+  </div>
+</section>
+
+<!-- ======================================================== 10 · TEAM -->
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">Section 10 — Team</span>
+    <h2 class="h-section">A team of engineers.<br>Specialist perspective.</h2>
+
+    <div class="founder mt6">
+      <div>
+        <div class="portrait portrait--photo">
+          <img src="assets/images/team.jpg" width="1400" height="2100" loading="lazy" decoding="async"
+               alt="Engineers reviewing dimensioned mechanical drawings and component detail sketches together at a work table.">
+        </div>
+        <p class="caption mt2">Structura Engineering · engineering analysis team</p>
+      </div>
+      <div>
+        <div class="creds">
+          <div class="cred">
+            <span class="cred__k">Education</span>
+            <span class="cred__v">Master's degrees in Engineering — including IIT Bombay</span>
+          </div>
+          <div class="cred">
+            <span class="cred__k">Professional background</span>
+            <span class="cred__v">Aerospace, automotive and industrial engineering teams</span>
+          </div>
+        </div>
+
+        <p class="body mt3">Structura is a <strong>team of engineers</strong>, not a single practitioner. Several members hold a Master's degree in Engineering from IIT Bombay, and between them team members have worked with established manufacturers and suppliers across these sectors. Collectively, that background covers structural analysis, verification and validation, failure analysis, composite structures, material behaviour, and nonlinear and dynamic problems.</p>
+
+        <p class="body mt3"><strong>Structura is intentionally small and specialist.</strong> That means clients work directly with the engineers responsible for understanding the problem, developing the analysis and interpreting the result.</p>
+
+        <div class="note mt4">
+          <span class="mono">Distinction</span>
+          <p class="mt2" style="margin-bottom:0"><strong>Team academic and professional background</strong> is clearly separated from <strong>work performed by Structura</strong>. The first is background and training; the second is the work this practice performs for its clients. Individual client engagements and client names are not published.</p>
+        </div>
+
+        <div class="btn-row"><a class="btn btn--secondary" href="about.html">Meet the Team</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================= 11 · ENGAGE -->
+<section class="section" style="background:#EFEDE7;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <span class="eyebrow">Section 11 — Engaging</span>
+    <h2 class="h-section">A practical way to start</h2>
+    <p class="lede mt3">You do not need to know which simulation method you need before contacting us.</p>
+    <p class="body mt3">A project can begin with a focused engineering discussion or diagnostic assessment.</p>
+
+    <div class="engage-grid mt6">
+      <article class="block">
+        <span class="idx">01</span>
+        <h3 class="h-card mt2">Focused Engineering Project</h3>
+        <p class="body mt2">For a defined technical question.</p>
+        <p class="caption mt3">Failure investigation · Structural assessment · Advanced analysis · Design verification</p>
+      </article>
+      <article class="block">
+        <span class="idx">02</span>
+        <h3 class="h-card mt2">Product Development Support</h3>
+        <p class="body mt2">For companies developing or improving a product.</p>
+        <p class="caption mt3">Design · Simulation · Redesign · Prototype support · Validation</p>
+      </article>
+      <article class="block">
+        <span class="idx">03</span>
+        <h3 class="h-card mt2">Specialist Engineering Support</h3>
+        <p class="body mt2">For internal engineering or CAE teams that need additional technical capability.</p>
+        <p class="caption mt3">Specialist analysis · Independent review · CAE support · Design and engineering support</p>
+      </article>
+    </div>
+
+    <blockquote class="pull mt6">The engagement can start small and become more detailed only when the evidence shows that it is necessary.</blockquote>
+    <p class="mt4"><a class="arrow-link" href="contact.html#intake-form">Discuss Your Engineering Problem <span aria-hidden="true">→</span></a></p>
+  </div>
+</section>
+
+<!-- ======================================================== 12 · INSIGHTS -->
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow">Section 12 — Insights</span>
+    <h2 class="h-section">Engineering insights</h2>
+    <p class="lede mt3">Practical articles on analysis, failure investigation and verification — including when advanced simulation is necessary, when it is not, and how to tell whether an engineering result can actually be trusted.</p>
+
+    <div class="mt6">
+      <article class="article">
+        <div>
+          <span class="mono">Analysis</span>
+          <p class="caption mt2">8 min read<br>Structura Engineering<br>2026</p>
+        </div>
+        <div>
+          <h3 class="article__title"><a href="insights.html">Why FEA results can be misleading</a></h3>
+          <p class="caption">A converged solution is not automatically a correct engineering answer.</p>
+        </div>
+        <a class="arrow-link" href="insights.html">Read article <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="article">
+        <div>
+          <span class="mono">Verification &amp; validation</span>
+          <p class="caption mt2">6 min read<br>Structura Engineering<br>2026</p>
+        </div>
+        <div>
+          <h3 class="article__title"><a href="insights.html">What makes a simulation trustworthy?</a></h3>
+          <p class="caption">What verification and validation can establish — and what they cannot.</p>
+        </div>
+        <a class="arrow-link" href="insights.html">Read article <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="article">
+        <div>
+          <span class="mono">Methods</span>
+          <p class="caption mt2">7 min read<br>Structura Engineering<br>2026</p>
+        </div>
+        <div>
+          <h3 class="article__title"><a href="insights.html">When nonlinear analysis is actually necessary</a></h3>
+          <p class="caption">How to decide when the physics requires nonlinear behaviour and when a simpler model is better.</p>
+        </div>
+        <a class="arrow-link" href="insights.html">Read article <span aria-hidden="true">→</span></a>
+      </article>
+    </div>
+
+    <p class="mt5"><a class="arrow-link" href="insights.html">Explore Engineering Insights <span aria-hidden="true">→</span></a></p>
+  </div>
+</section>
+
+<!-- ====================================================== 13 · FINAL CTA -->
+<section class="section section--dark">
+  <div class="wrap">
+    <span class="eyebrow">Section 13 — Contact</span>
+    <h2 class="display-hero">Have a difficult engineering problem?</h2>
+
+    <div class="grid mt5">
+      <div style="grid-column:span 6">
+        <p class="body" style="color:#9AA1A7">A component is failing.<br>
+        A simulation does not agree with reality.<br>
+        A design needs independent technical assessment.<br>
+        A machine cannot operate through its required range.<br>
+        Or an engineering team needs specialist analysis to make a decision.</p>
+      </div>
+      <div style="grid-column:span 6">
+        <div class="figure">
+          <span class="mono" style="color:#9AA1A7">Intake</span>
+          <p class="caption mt2" style="color:#9AA1A7">Tell us what is happening and what decision you need to make. You do not need to know which analysis method you need — that is our judgement to make with you.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="statement mt6" style="color:#FFFFFF">Start with the engineering question.</p>
+
+    <div class="btn-row">
+      <a class="btn btn--primary" href="contact.html#intake-form">Discuss an Engineering Problem</a>
+      <a class="btn btn--secondary" href="mailto:hello@structura.in">Email Structura</a>
+    </div>
+
+    <p class="mt6" style="color:#9AA1A7"><strong style="color:#FFF">Structura Engineering</strong><br>Advanced engineering analysis for difficult mechanical problems.<br>Working across India.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="wordmark" href="index.html">
+          <svg class="wordmark__mark" width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">
+            <line x1="4.5" y1="3" x2="4.5" y2="23" stroke="#FFFFFF" stroke-width="1.4"/>
+            <line x1="4.5" y1="3" x2="22" y2="13" stroke="#FFFFFF" stroke-width="1.4"/>
+            <line x1="4.5" y1="23" x2="22" y2="13" stroke="#7FA9C4" stroke-width="1.4"/>
+            <circle cx="13.2" cy="8" r="1.8" fill="#FFFFFF"/>
+          </svg>
+          <span class="wordmark__text">Structura<small>Engineering</small></span>
+        </a>
+        <p class="footer__tagline">Advanced engineering analysis for difficult mechanical problems.</p>
+        <p class="footer__tagline" style="margin-top:8px">Working across India.</p>
+      </div>
+
+      <div>
+        <h3>Navigate</h3>
+        <ul>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:hello@structura.in">hello@structura.in</a></li>
+          <li>Working across India</li>
+          <li><a href="https://www.linkedin.com/in/structura-engineering" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Engagement</a>
+        <span>© 2026 Structura Engineering</span>
+      </div>
+      <span class="mono" style="color:#9AA1A7">Engineering judgement before engineering theatre</span>
+    </div>
+
+    <p class="footer__note">All information exchanged in connection with an enquiry is treated as confidential and is not disclosed to third parties without consent. Case studies are labelled by evidence status: synthetic studies and literature-informed reconstructions use illustrative inputs and are not presented as completed client results. Structura provides engineering analysis and technical support; it is not a certification or regulatory authority.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

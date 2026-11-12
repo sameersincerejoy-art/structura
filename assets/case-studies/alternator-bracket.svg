@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-labelledby="abTitle abDesc">
+  <title id="abTitle">Alternator mounting bracket and belt drive</title>
+  <desc id="abDesc">Conceptual technical schematic of an engine block driving an alternator by belt, showing engine-order vibration input, belt tension, the bracket load path and the fatigue-critical root region.</desc>
+
+  <style>
+    .paper { fill: #FBFAF7; }
+    .ink { fill: none; stroke: #17191C; stroke-width: 1.6; }
+    .thin { fill: none; stroke: #555B60; stroke-width: 0.9; }
+    .blue { fill: none; stroke: #285B78; stroke-width: 1.6; }
+    .amber { fill: none; stroke: #B7792B; stroke-width: 1.8; }
+    .dash { fill: none; stroke: #285B78; stroke-width: 1.1; stroke-dasharray: 5 4; }
+    text { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; letter-spacing: .08em; fill: #555B60; text-transform: uppercase; }
+    .t-dark { fill: #17191C; }
+    .t-blue { fill: #285B78; }
+    .t-amber { fill: #B7792B; }
+    .t-title { font-size: 12px; fill: #17191C; }
+  </style>
+
+  <rect class="paper" x="0" y="0" width="800" height="450"/>
+
+  <!-- engine block -->
+  <rect class="ink" x="62" y="130" width="232" height="212" fill="#EDEBE4"/>
+  <line class="thin" x1="96" y1="130" x2="96" y2="342"/>
+  <line class="thin" x1="136" y1="130" x2="136" y2="342"/>
+  <line class="thin" x1="176" y1="130" x2="176" y2="342"/>
+  <text x="78" y="120" class="t-dark">Engine block</text>
+
+  <!-- crank pulley -->
+  <circle class="ink" cx="160" cy="272" r="52" fill="#F5F4F0"/>
+  <circle class="thin" cx="160" cy="272" r="34"/>
+  <circle class="thin" cx="160" cy="272" r="8"/>
+  <text x="126" y="344">Crank</text>
+
+  <!-- belt runs -->
+  <path class="thin" d="M160 220 L470 148"/>
+  <path class="thin" d="M160 324 C250 342 336 344 392 316"/>
+  <path class="thin" d="M470 168 C486 226 468 274 430 296"/>
+  <path class="thin" d="M404 322 C424 332 440 330 452 320"/>
+
+  <!-- tensioner -->
+  <circle class="thin" cx="408" cy="312" r="20" fill="#F1EFE9"/>
+  <circle class="thin" cx="408" cy="312" r="5"/>
+  <text x="374" y="352">Tensioner</text>
+
+  <!-- alternator -->
+  <rect class="ink" x="470" y="116" width="168" height="130" rx="6" fill="#EDEBE4"/>
+  <circle class="ink" cx="470" cy="152" r="34" fill="#F5F4F0"/>
+  <circle class="thin" cx="470" cy="152" r="18"/>
+  <circle class="thin" cx="470" cy="152" r="5"/>
+  <text x="494" y="106" class="t-dark">Alternator</text>
+  <line class="thin" x1="506" y1="134" x2="620" y2="134"/>
+  <line class="thin" x1="506" y1="158" x2="620" y2="158"/>
+  <line class="thin" x1="506" y1="182" x2="620" y2="182"/>
+  <line class="thin" x1="506" y1="206" x2="620" y2="206"/>
+
+  <!-- bracket: block boss to alternator mounting feet -->
+  <path class="blue" fill="none" d="M292 224 L470 238 L520 238 L560 246 L560 286 L506 286 L506 258 L292 250 Z"/>
+  <circle class="thin" cx="310" cy="238" r="7"/>
+  <circle class="thin" cx="532" cy="248" r="6"/>
+  <circle class="thin" cx="536" cy="280" r="6"/>
+  <text class="t-blue" x="330" y="318">Mounting bracket</text>
+
+  <!-- load path arrows -->
+  <path class="dash" d="M500 254 L420 248 L332 244"/>
+  <path class="dash" d="M332 244 l10 -5 m-10 5 l10 5"/>
+  <text class="t-blue" x="352" y="232">Load path</text>
+
+  <!-- fatigue critical root -->
+  <circle class="amber" cx="298" cy="237" r="16"/>
+  <line class="amber" x1="272" y1="206" x2="286" y2="224"/>
+  <text class="t-amber" x="188" y="198">Critical root radius</text>
+
+  <!-- engine order vibration -->
+  <path class="amber" d="M92 358 v24 m0 -24 l-6 8 m6 -8 l6 8 M132 358 v24 m0 -24 l-6 8 m6 -8 l6 8"/>
+  <line class="thin" x1="72" y1="358" x2="152" y2="358"/>
+  <text class="t-amber" x="164" y="378">Engine-order excitation</text>
+
+  <!-- belt tension -->
+  <path class="amber" d="M446 142 l-22 8 m22 -8 l-15 -10"/>
+  <text class="t-amber" x="454" y="132">Belt tension</text>
+
+  <!-- annotations -->
+  <line class="thin" x1="660" y1="52" x2="766" y2="52"/>
+  <text class="t-title" x="660" y="42">Load path</text>
+  <text x="660" y="84">Static:</text>
+  <text x="660" y="99">gravity, belt tension</text>
+  <text x="660" y="120" class="t-amber">Cyclic:</text>
+  <text x="660" y="135">engine-order</text>
+  <text x="660" y="150">vibration</text>
+  <text x="660" y="176">Local:</text>
+  <text x="660" y="191">notch and</text>
+  <text x="660" y="206">surface condition</text>
+
+  <line class="thin" x1="40" y1="406" x2="760" y2="406"/>
+  <text x="40" y="428">Conceptual schematic · not OEM geometry</text>
+  <text x="470" y="428" class="t-blue">Redesign: load path · modal behaviour · root transition</text>
+
+  <rect x="0.5" y="0.5" width="799" height="449" fill="none" stroke="#D8D5CD"/>
+</svg>

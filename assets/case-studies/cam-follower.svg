@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-labelledby="cfTitle cfDesc">
+  <title id="cfTitle">Radial disc cam and in-line roller follower</title>
+  <desc id="cfDesc">Conceptual technical diagram of a radial disc cam driving an in-line translating roller follower against a return spring, with rotation, contact force and operating speed annotated.</desc>
+
+  <style>
+    .paper { fill: #FBFAF7; }
+    .ink { fill: none; stroke: #17191C; stroke-width: 1.6; }
+    .thin { fill: none; stroke: #555B60; stroke-width: 0.9; }
+    .blue { fill: none; stroke: #285B78; stroke-width: 1.6; }
+    .amber { fill: none; stroke: #B7792B; stroke-width: 1.8; }
+    .dash { fill: none; stroke: #555B60; stroke-width: 0.9; stroke-dasharray: 5 4; }
+    text { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; letter-spacing: .08em; fill: #555B60; text-transform: uppercase; }
+    .t-dark { fill: #17191C; }
+    .t-blue { fill: #285B78; }
+    .t-amber { fill: #B7792B; }
+    .t-title { font-size: 12px; fill: #17191C; }
+  </style>
+
+  <rect class="paper" x="0" y="0" width="800" height="450"/>
+
+  <!-- drawing field -->
+  <line class="thin" x1="40" y1="392" x2="500" y2="392"/>
+  <text x="40" y="414">Cam profile · follower guide · return spring</text>
+
+  <!-- follower stem and guide -->
+  <rect class="ink" x="207" y="44" width="16" height="76"/>
+  <rect class="thin" x="176" y="64" width="20" height="40" fill="#F1EFE9"/>
+  <rect class="thin" x="234" y="64" width="20" height="40" fill="#F1EFE9"/>
+  <line class="thin" x1="196" y1="84" x2="207" y2="84"/>
+  <line class="thin" x1="223" y1="84" x2="234" y2="84"/>
+
+  <!-- return spring -->
+  <line class="thin" x1="207" y1="52" x2="160" y2="52"/>
+  <path class="blue" d="M160 52 L174 60 L160 70 L174 80 L160 90 L174 100 L164 108"/>
+  <line class="thin" x1="164" y1="108" x2="207" y2="108"/>
+  <text class="t-blue" x="86" y="84">Return</text>
+  <text class="t-blue" x="86" y="98">spring</text>
+
+  <!-- roller follower -->
+  <circle class="ink" cx="215" cy="130" r="20" fill="#F5F4F0"/>
+  <circle class="thin" cx="215" cy="130" r="4"/>
+  <line class="thin" x1="215" y1="120" x2="215" y2="44"/>
+  <text x="248" y="120">Roller follower</text>
+
+  <!-- cam body -->
+  <path class="ink" fill="#EDEBE4" d="M215 150
+    C252 152 274 176 284 212
+    C294 250 290 302 272 330
+    C254 358 216 366 184 354
+    C150 341 132 312 132 275
+    C132 236 150 202 180 174
+    C191 163 202 152 215 150 Z"/>
+  <circle class="ink" cx="215" cy="268" r="12"/>
+  <line class="thin" x1="203" y1="268" x2="227" y2="268"/>
+  <line class="thin" x1="215" y1="256" x2="215" y2="280"/>
+  <text x="180" y="300">Cam</text>
+
+  <!-- base circle reference -->
+  <circle class="dash" cx="215" cy="268" r="85"/>
+  <text x="118" y="376">Base circle</text>
+
+  <!-- rotation arrow -->
+  <path class="thin" d="M300 230 A92 92 0 0 1 300 306"/>
+  <path class="thin" d="M300 306 l-4 -10 m4 10 l9 -6"/>
+  <text x="310" y="276">ω</text>
+
+  <!-- contact force -->
+  <line class="amber" x1="215" y1="150" x2="215" y2="112"/>
+  <path class="amber" d="M209 118 l6 -6 l6 6"/>
+  <text class="t-amber" x="224" y="152">Contact force</text>
+
+  <!-- annotations -->
+  <line class="thin" x1="520" y1="52" x2="760" y2="52"/>
+  <text class="t-title" x="520" y="42">Mechanism schematic</text>
+
+  <text x="520" y="82">Radial disc cam</text>
+  <text x="520" y="100">In-line roller follower</text>
+  <text x="520" y="118">Lift 30 mm · 90° rise / return</text>
+
+  <line class="thin" x1="520" y1="146" x2="760" y2="146"/>
+
+  <text class="t-amber" x="520" y="174">Operating speed</text>
+  <text class="t-amber" x="520" y="194" style="font-size:18px;">200 → 260 rpm</text>
+  <text x="520" y="218">Original configuration predicted</text>
+  <text x="520" y="233">to lose contact at 260 rpm</text>
+
+  <line class="thin" x1="520" y1="258" x2="760" y2="258"/>
+
+  <text class="t-blue" x="520" y="286">Redesign screening</text>
+  <text x="520" y="306">Reduced moving mass</text>
+  <text x="520" y="321">Increased spring preload</text>
+  <text x="520" y="336">Polynomial cam motion law</text>
+
+  <line class="thin" x1="520" y1="360" x2="760" y2="360"/>
+  <text class="t-blue" x="520" y="382">Candidate F · +36.17 N</text>
+  <text x="520" y="400">Calculated nominal margin</text>
+
+  <!-- frame edge -->
+  <rect x="0.5" y="0.5" width="799" height="449" fill="none" stroke="#D8D5CD"/>
+</svg>

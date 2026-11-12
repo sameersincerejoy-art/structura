@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engineering Case Studies | Structura Engineering</title>
+<meta name="description" content="Explore selected engineering investigations in fluid–structure interaction, mechanism dynamics and fatigue engineering. Review concise findings and download full technical studies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header__inner">
+    <a class="wordmark" href="index.html" aria-label="Structura Engineering — home">
+      <svg class="wordmark__mark" width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">
+        <line x1="4.5" y1="3" x2="4.5" y2="23" stroke="#17191C" stroke-width="1.4"/>
+        <line x1="4.5" y1="3" x2="22" y2="13" stroke="#17191C" stroke-width="1.4"/>
+        <line x1="4.5" y1="23" x2="22" y2="13" stroke="#285B78" stroke-width="1.4"/>
+        <circle cx="13.2" cy="8" r="1.8" fill="#17191C"/>
+      </svg>
+      <span class="wordmark__text">Structura<small>Engineering</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="industries.html">Industries</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="insights.html">Insights</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn--primary nav__cta" href="contact.html#intake-form">Discuss an Engineering Problem</a>
+    </nav>
+    <div class="header__cta">
+      <a class="btn btn--primary" href="contact.html#intake-form">Discuss an Engineering Problem</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="18" height="14" viewBox="0 0 18 14" aria-hidden="true">
+        <line x1="0" y1="1" x2="18" y2="1" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="0" y1="7" x2="18" y2="7" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="0" y1="13" x2="18" y2="13" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================================================ INTRODUCTION -->
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Engineering investigations</span>
+    <h1 class="display-page display-page--single">Engineering problems. Investigated with purpose.</h1>
+    <p class="lede mt4">Explore selected engineering investigations covering structural behaviour, dynamic systems, fatigue and coupled fluid–structure problems. Each study explains the engineering question, the approach taken, the evidence obtained and the limitations that remain.</p>
+  </div>
+</section>
+
+<!-- ============================================================ STUDIES -->
+<section class="section">
+  <div class="wrap">
+    <div class="cs-intro">
+      <span class="eyebrow">Selected studies</span>
+      <p class="caption cs-intro__note">Two investigations are currently published. Each is summarised here in brief; the complete technical study is available as a PDF.</p>
+    </div>
+
+    <div class="cs-grid">
+
+      <!-- ---------------------------------------------------- STUDY: CAM–FOLLOWER -->
+      <article class="cs-card" id="cam-follower">
+        <figure class="cs-card__media">
+          <img src="assets/case-studies/cam-follower.svg" width="800" height="450" loading="lazy" decoding="async"
+               alt="Technical diagram of a radial disc cam driving an in-line roller follower against a return spring, with the cam profile, follower guide and contact force indicated.">
+        </figure>
+
+        <div class="cs-card__body">
+          <div class="cs-card__tags">
+            <span class="mono">Industrial Machinery / Packaging Automation</span>
+            <span class="badge badge--professional">Synthetic Engineering Study</span>
+          </div>
+
+          <h2 class="cs-card__title">High-Speed Cam–Follower Redesign</h2>
+          <p class="cs-card__subtitle">Investigation of predicted contact loss and robustness-constrained design screening.</p>
+
+          <p class="cs-card__summary">A spring-return cam–follower mechanism was investigated for an increase in operating speed from 200 to 260 rpm. A reduced-order dynamic model predicted loss of contact in the original configuration at the higher speed. Redesign screening combined reduced effective moving mass, increased spring preload and a revised polynomial cam motion law. Candidate F achieved a calculated nominal minimum contact-force margin of +36.17 N and a worst-corner margin of +16.26 N within the evaluated synthetic uncertainty envelope.</p>
+
+          <dl class="cs-focus">
+            <dt>Engineering focus</dt>
+            <dd>Mechanism dynamics · Unilateral contact · Robustness screening</dd>
+          </dl>
+
+          <div class="cs-finding">
+            <span class="mono">Key finding</span>
+            <p>Candidate F was selected as the preferred analytical development concept, with Candidate G retained as a fallback. The margins are calculated results, not measured outcomes.</p>
+          </div>
+
+          <div class="cs-limits">
+            <span class="mono">Scope and limits</span>
+            <ul>
+              <li>Synthetic inputs; the study does not represent an actual client failure.</li>
+              <li>No representative FEA, physical testing or endurance validation exists.</li>
+              <li>Assembly stiffness, bearing and contact durability, and manufacturing feasibility remain open.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cs-card__foot">
+          <span class="mono cs-file">PDF · 6 pages · 0.5 MB</span>
+          <a class="cs-download" href="downloads/Structura-Engineering-Cam-Follower-Redesign-Study.pdf" download
+             aria-label="Download Full Case Study (PDF): High-Speed Cam–Follower Redesign, 6 pages, 0.5 megabytes">
+            <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path d="M8 1.5v8.2M4.9 6.8 8 9.9l3.1-3.1M2.5 12.2v2.3h11v-2.3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/>
+            </svg>
+            Download Full Case Study (PDF)
+          </a>
+        </div>
+      </article>
+
+      <!-- ---------------------------------------------------- STUDY: ALTERNATOR BRACKET -->
+      <article class="cs-card" id="alternator-bracket">
+        <figure class="cs-card__media">
+          <img src="assets/case-studies/alternator-bracket.svg" width="800" height="450" loading="lazy" decoding="async"
+               alt="Technical diagram of an engine block, belt-driven alternator and mounting bracket, showing engine-order vibration input, belt tension and the bracket load path to the fatigue-critical root.">
+        </figure>
+
+        <div class="cs-card__body">
+          <div class="cs-card__tags">
+            <span class="mono">Automotive / Powertrain / Engine Accessories</span>
+            <span class="badge badge--professional">Literature-Informed Reconstruction</span>
+          </div>
+
+          <h2 class="cs-card__title">Beyond Static Strength</h2>
+          <p class="cs-card__subtitle">Alternator mounting bracket fatigue — engine vibration, local fatigue resistance and corrective design.</p>
+
+          <p class="cs-card__summary">This literature-informed engineering investigation examines how an alternator mounting bracket can be statically adequate yet remain vulnerable to fatigue under engine-induced vibration. The reconstructed scenario considers the combined influence of cyclic stress, local notch severity and surface condition, and separates published observations from scenario-specific assumptions. Alternative corrective concepts were assessed, with an integrated redesign — combining an improved load path, revised root transition and controlled surface quality — producing a calculated equivalent fatigue-demand indicator of 138.7 MPa compared with an illustrative baseline of 234.7 MPa.</p>
+
+          <dl class="cs-focus">
+            <dt>Engineering focus</dt>
+            <dd>Fatigue Engineering · Vibration · Mechanical Design</dd>
+          </dl>
+
+          <div class="cs-finding">
+            <span class="mono">Key finding</span>
+            <p>The combined redesign concept produced a calculated 40.9% reduction in the illustrative fatigue-demand indicator under the study's declared assumptions. The reduction is calculated, not measured.</p>
+          </div>
+
+          <div class="cs-limits">
+            <span class="mono">Scope and limits</span>
+            <ul>
+              <li>Illustrative reconstruction; not a forensic analysis of a measured failure.</li>
+              <li>No component-specific measurements, new CAD, FEA or physical testing.</li>
+              <li>No validated fatigue-life improvement or proven resonance mechanism is claimed.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cs-card__foot">
+          <span class="mono cs-file">PDF · 9 pages · 1.5 MB</span>
+          <a class="cs-download" href="downloads/Structura-Engineering-Alternator-Bracket-Fatigue-Study.pdf" download
+             aria-label="Download Full Case Study (PDF): Beyond Static Strength, alternator bracket fatigue, 9 pages, 1.5 megabytes">
+            <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path d="M8 1.5v8.2M4.9 6.8 8 9.9l3.1-3.1M2.5 12.2v2.3h11v-2.3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/>
+            </svg>
+            Download Full Case Study (PDF)
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================ EVIDENCE LANGUAGE -->
+<section class="section section--band">
+  <div class="wrap">
+    <span class="eyebrow">Evidence classification</span>
+    <h2 class="h-section measure">How to read these studies</h2>
+    <p class="lede mt3">Not every engineering study is a completed client project. Each entry carries a classification that describes what kind of work it is.</p>
+
+    <div class="ev-labels mt5">
+      <div class="ev-label">
+        <span class="badge badge--professional">Technical Investigation</span>
+        <p class="caption mt2">An engineering question examined through analysis, simulation or calculation. It is not necessarily a client engagement.</p>
+      </div>
+      <div class="ev-label">
+        <span class="badge badge--professional">Synthetic Engineering Study</span>
+        <p class="caption mt2">Assumed or synthetic inputs, with calculated predictions and numerical checks. Results are not measured from hardware.</p>
+      </div>
+      <div class="ev-label">
+        <span class="badge badge--professional">Literature-Informed Reconstruction</span>
+        <p class="caption mt2">A scenario constructed from published work and engineering principles. It is illustrative, not a measured failure reconstruction.</p>
+      </div>
+      <div class="ev-label">
+        <span class="badge badge--professional">Client Case Study</span>
+        <p class="caption mt2">Used only where a genuine client engagement exists and its results are approved for publication. No such study is shown here.</p>
+      </div>
+      <div class="ev-label">
+        <span class="badge badge--professional">Previous Professional Experience</span>
+        <p class="caption mt2">Relevant experience from previous professional work, clearly attributed and not presented as work performed by Structura.</p>
+      </div>
+    </div>
+
+    <div class="ev-scale mt6">
+      <div>
+        <span class="mono">What the results are</span>
+        <p class="caption mt2">Assumed inputs, calculated results, numerical verification, simulation output, measured results and experimental validation are distinguished in each study. Proposed tests are never presented as completed tests, and numerical stability is never presented as physical validation.</p>
+      </div>
+      <div>
+        <span class="mono">What these two studies are not</span>
+        <p class="caption mt2">Neither entry is a client project, a production release or a measured service-life improvement. The cam–follower margins are calculated within a stated uncertainty envelope; the alternator bracket reduction is an illustrative calculated indicator under declared assumptions.</p>
+      </div>
+    </div>
+
+    <p class="caption mt5"><a class="arrow-link" href="capabilities.html">Review the analysis capabilities behind these studies <span aria-hidden="true">→</span></a></p>
+  </div>
+</section>
+
+<!-- ============================================================ NEXT -->
+<section class="section section--dark">
+  <div class="wrap">
+    <span class="eyebrow">Next step</span>
+    <h2 class="h-section measure">Have a comparable engineering problem?</h2>
+    <p class="lede mt3" style="color:#9AA1A7">Tell us what component or system is involved, what decision is blocked and what evidence you already hold. We can establish whether the right starting point is a calculation, a simulation, a measurement campaign or a targeted test.</p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="contact.html#intake-form">Discuss an Engineering Problem</a>
+      <a class="btn btn--secondary" href="mailto:hello@structura.in">Email Structura</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="wordmark" href="index.html">
+          <svg class="wordmark__mark" width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">
+            <line x1="4.5" y1="3" x2="4.5" y2="23" stroke="#FFFFFF" stroke-width="1.4"/>
+            <line x1="4.5" y1="3" x2="22" y2="13" stroke="#FFFFFF" stroke-width="1.4"/>
+            <line x1="4.5" y1="23" x2="22" y2="13" stroke="#7FA9C4" stroke-width="1.4"/>
+            <circle cx="13.2" cy="8" r="1.8" fill="#FFFFFF"/>
+          </svg>
+          <span class="wordmark__text">Structura<small>Engineering</small></span>
+        </a>
+        <p class="footer__tagline">Advanced engineering analysis for difficult mechanical problems.</p>
+        <p class="footer__tagline" style="margin-top:8px">Working across India.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@structura.in">hello@structura.in</a></li>
+          <li>Working across India</li>
+          <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Engagement</a>
+        <span>© 2026 Structura Engineering</span>
+      </div>
+      <span class="mono" style="color:#9AA1A7">Engineering judgement before engineering theatre</span>
+    </div>
+    <p class="footer__note">All information exchanged in connection with an enquiry is treated as confidential and is not disclosed to third parties without consent. Case studies are labelled by evidence status: synthetic studies and literature-informed reconstructions use illustrative inputs and are not presented as completed client results. Structura provides engineering analysis and technical support; it is not a certification or regulatory authority.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
